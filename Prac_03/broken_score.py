@@ -20,16 +20,4 @@ def find_mark(score):
         return "Bad"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 main()
