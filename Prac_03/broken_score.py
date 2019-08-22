@@ -6,10 +6,10 @@ Broken program to determine score status
 
 def main():
     score = float(input("Enter score: "))
-    print(find_mark(score))
+    print(find_exam_mark(score))
 
 
-def find_mark(score):
+def find_exam_mark(score):
     if 0 > score > 100:
         return "Invalid score"
     elif score >= 90:
