@@ -1,5 +1,9 @@
 import random
 
+MIN = 1
+MAX = 45
+NUMBERS_ON_EACH_LINE = 6
+
 number_of_quick_picks = int(input("Please enter the number of quick picks: "))
 
 if number_of_quick_picks <= 0:
@@ -7,10 +11,7 @@ if number_of_quick_picks <= 0:
     number_of_quick_picks = int(input("Please enter the number of quick picks: "))
 
 
-
-
-
-
 for i in range(number_of_quick_picks):
-    number = random.sample(range(45), k=6)
-    print(number)
+    number = random.sample(range(MIN, MAX), k=6)
+    number.sort()
+    print(" ".join(map(str, number)))
