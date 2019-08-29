@@ -12,6 +12,12 @@ if number_of_quick_picks <= 0:
 
 
 for i in range(number_of_quick_picks):
-    number = random.sample(range(MIN, MAX), k=6)
-    number.sort()
-    print(" ".join(map(str, number)))
+    quick_pick = []
+    for j in range(NUMBERS_ON_EACH_LINE):
+        number = random.randint(MIN, MAX)
+        while number in quick_pick:
+            number = random.randint(MIN, MAX)
+        quick_pick.append(number)
+        quick_pick.sort()
+    print(" ".join("{: 3}".format(number) for number in quick_pick))
+
