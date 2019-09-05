@@ -21,8 +21,7 @@ usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'B
 user = input("Please enter your username: ")
 
 access = user in usernames
-if access == True:
+if access:
     print("Access Granted")
 else:
     print("Access Denied")
-
