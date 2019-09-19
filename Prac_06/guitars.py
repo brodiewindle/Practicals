@@ -1,5 +1,6 @@
 CURRENT_YEAR = 2019
-VINTAGE YEAR = 50
+VINTAGE_YEAR = 50
+
 
 class Guitar:
 
