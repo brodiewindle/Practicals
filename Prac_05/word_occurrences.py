@@ -10,7 +10,7 @@ for word in words:
 
 words = list(list_from_string.keys())  # put keys into a list
 words.sort()
-
+max_length = max((len(word) for word in words))
 for word in words:
-    print("{:{}} : {}".format(word, 12, list_from_string[word]))
+    print("{:{}} : {}".format(word, max_length, list_from_string[word]))
 
