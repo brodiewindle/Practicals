@@ -1,4 +1,3 @@
-
 from Prac_06.guitars import Guitar
 
 guitars = []
@@ -14,6 +13,12 @@ while name != "":
     print("{} ({}) : ${} added.".format(add_guitar.name, add_guitar.year, add_guitar.cost))
     name = input("Name: ")
 
-print("These are my guitars: ")
-for i, guitar in enumerate(guitars):
-    print("Guitar {}: {:>2} ({}), worth ${:,.2f}".format(i + 1, guitar.name, guitar.year, guitar.cost))
+if guitars:
+    guitars.sort()
+    print("These are my guitars: ")
+    for i, guitar in enumerate(guitars):
+        vintage_str = ""
+        if guitar.is_vintage():
+            vintage_str = "(vintage)"
+        print("Guitar {}: {:20} ({}), worth ${:,.2f} {}".format(i + 1, guitar.name, guitar.year, guitar.cost,
+                                                                vintage_str))
