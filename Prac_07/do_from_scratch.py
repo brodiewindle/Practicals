@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.button import Label
+from kivy.uix.label import Label
 
 
 class DoFromScratchApp(App):
@@ -18,3 +18,8 @@ class DoFromScratchApp(App):
     def create_widgets(self):
         for name in self.names:
             temp_label = Label(text=name, id=name)
+            # temp_label.bind(on_release=self.press_entry)
+            self.root.ids.entries_box.add_widget(temp_label)
+
+
+DoFromScratchApp().run()
