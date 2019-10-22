@@ -12,7 +12,7 @@ class MphToKph(App):
     def build(self):
         self.title = "MPH to KPH converter"
         self.root = Builder.load_file('mph_to_kph.kv')
-        Window.size = (400, 200)
+        Window.size = (500, 175)
         return self.root
 
     def handle_increment(self, text, increment):
@@ -29,10 +29,10 @@ class MphToKph(App):
     @staticmethod
     def str_to_float(text):
         try:
-            value = float(text)
+            value = int(text)
             return value
         except ValueError:
-            return 0.0
+            return 0
 
 
 MphToKph().run()

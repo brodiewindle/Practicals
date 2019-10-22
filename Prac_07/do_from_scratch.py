@@ -7,7 +7,7 @@ class DoFromScratchApp(App):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.names = ["bob", "billy", "brice", "jess", "chelsea", "scott", "tianna"]
+        self.names = ["Bob", "Billy", "Brice", "Jess", "Chelsea", "Scott", "Tianna"]
 
     def build(self):
         self.title = "Do from Scratch App"
