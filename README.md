@@ -1,3 +1,4 @@
 # Practicals
 Practical Folder
-This folder is the most recent update of all practials completed in CP1404
+This folder contains all the labs for CP1404 completed in Semester 2, 2019
+Lecturer - Lindsay Ward
